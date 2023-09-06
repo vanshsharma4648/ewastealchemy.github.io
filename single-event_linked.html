@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>National Conference on EWM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/customize.css" rel="stylesheet" media="screen">
+    <link href="style.css" rel="stylesheet" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+	<div id="page">
+		<div id="main-container">
+			<div class="sticky-wrapper">
+				<nav id="navigation">
+					<div class="container">
+						<a href="index.html" id="logo"><img class=logo src="images/logo.png" alt="Logo Image"></a>
+						<nav>
+							<ul id="menu">
+								<li><a href="index.html#project">Project</a></li>
+								<li><a href="index.html#team">Team</a></li>
+								<li><a href="index.html#services">Services</a></li>
+								<li><a href="index.html#gallery">Gallery</a></li>
+								<li><a href="index.html#events">Events</a></li>
+								<li><a href="index.html#blog">Blog</a></li>
+								<li><a href="index.html#contact">Contact</a></li>
+								<li><a href="index.html#donation" class="btn btn-success">Donation</a></li>
+							</ul>
+						</nav>
+					</div>
+				</nav>
+			</div>
+			<section id="single-page" class="section with-arrow">
+				<div class="section-header">
+					<div class="container">
+						<h1>National Conference on E-waste Management</h1>
+					</div>
+				</div>
+				<div class="section-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-9">
+								<div class="event-featured">
+								    <center><img src="images/event/1x.jpg" alt="Featured Image"></center>
+							    </div>
+							    <div class="event-date">
+									<p><span class="icon icon-calendar"></span> January 23, 2017</p>
+									<P><span class="icon icon-location"></span> XLRI,Jamshedpur, Jharkhand, India</p>
+							    </div>
+							    <div class="event-content">
+								    <p><span class="dropcap">T</span>he National Conference on E-waste Management, organized by the Xavier Institute of Development Action & Studies will take place on 23rd January 2017 in Jamshedpur, India.</p>
+									<p>The conference will cover areas like macro perspective, demand and supply side factors contributing to e-waste, environmental impact, e-waste as a resource, e-waste Regulations: National and International.
+									<p>E-waste is becoming a serious environmental concern. The objective of the conference is to invite researchers & companies to present research papers and case studies relating to e-waste and recommend sustainable strategies for e-waste management.</p>
+									<p>E-waste (discarded electrical and electronic devices) is becoming one of the most serious environmental concerns. Worldwide e-waste was estimated to be in the tune of 41.8 million tonnes in 2014, a rise of 2 million tones from 2013. India, with a rising need for upgrading electronic products, has attained the fifth position globally in terms of e-waste generation.</p>
+									<p>E-waste, however, has a potential of being an important source of metals like gold, silver and copper if properly recycled. A study states that around 300 tonnes of gold, equal to 11% world's production in 2013, could be extracted from e-waste.</p>
+									<p>As per ASSOCHAM only 4% of e-waste is properly recycled in India and the remaining is going into landfills or dismantled in unhygienic conditions causing environmental and health problems. Managing e-waste properly with resource recovery is therefore important and Centre for Global Management and Responsible Management, XLRI, Jamshedpur is organizing a full day National Conference on E-waste Management at Jamshedpur, India during January 23, 2017.</p>
+									<h4> Credits: www.indiaeve.com </h4> 
+								</div>
+							    <div class="event-location">
+								    <h2>Event Location</h2>
+								    <div id="map-canvas"></div>
+							    </div>
+
+							</div>
+							<div class="col-md-3">
+					            <div class="widget">
+					              <h3>Upcoming events</h3>
+					              <ul class="widget-latests list-unstyled">
+					                <li>
+					                  <a href="single-event.html"><img src="images/event/2.png" alt="Post thumbnail"></a>
+					                  <h4>No upcoming events other than this.</h4>
+					                  <span><span class="icon icon-calendar"></span></span>
+					                  <span><span class="icon icon-location"></span></span></p>
+					                </li>
+					              </ul>
+					            </div>
+					            <div class="widget">
+					              <h3>Yes, you can help us now</h3>
+					              <a href="index.html#donation" class="btn btn-default widget-btn">Make a Donation</a>
+					            </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="footer" class="section section-full-colored">
+				<div class="section-content center">
+					<p>&copy; 2016 - Tushar Arora & Aman Bhargava. Made with <i class="fa fa-heart" style="font-size: 20px; color:red;"> &#9829; </i> in India.</p>
+				</div>
+			</section>
+		</div>
+		<div id="loader"></div>
+  	</div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&callback=aviaOnGoogleMapsLoaded&key=AIzaSyDgEW7-uLzuTOYjSXmB1u-TK8CizoOC-JA"></script>
+    <script>
+		function initialize() {
+		  var myLatlng = new google.maps.LatLng(22.8133,86.1908); //YOUR LOCATION -> http://itouchmap.com/latlong.html
+		  var mapOptions = {
+		    zoom: 6,
+		    center: myLatlng
+		  }
+		  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+		  var marker = new google.maps.Marker({
+		      position: myLatlng,
+		      map: map,
+		      title: 'Hello World! Your Location'
+		  });
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+	<script src="js/jquery.sequence-min.js"></script>
+	<script src="js/alert.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/jquery.smoothscroll.min.js"></script>
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <script src="js/pace.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
